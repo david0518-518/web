@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>0921-css簡介</title>
+        <!--html註解-->
+        <style> /*css註解*/
+        /*css又稱樣式表*/
+        /*選擇器:selector有三種 標籤名稱 #id .class*/
+        /*
+            display: block/inline/inline-block;
+            width: px; pixal像素
+            height: px;
+        
+            color: 前景顏色
+            blackground-color: 背景顏色
+            顏色設定:
+            1. 英文單字
+            2. rgb(紅光0~255, 綠光0~255, 藍光0~255)
+            3. rgba(紅光0~255, 綠光0~255, 藍光0~255, 可見度0~1) //0全透明~1不透明
+            4. 色碼 #RRGGBB 00~ff
+            5. hsl(色相 0~360, 彩度0~100%, 亮度0~100%)
+            6. hsla(色相 0~360, 彩度0~100%, 亮度0~100%, 可見度0~1) //0全透明~1不透明
+        
+        */
+            p {
+                background-color: lightgray;
+            }
+            #p1 {
+                background-color: lightblue;
+            }
+            .c1{
+                color: red;
+            }
+            #p2{
+                background-color: lightcyan;
+            }
+            .c2{
+                color: blue;
+            }
+            #d1{
+                background-color: yellow;
+                height: 50px;
+                width: 50px;
+                display: inline-block;
+            }
+            #d2{ 
+                background-color: yellow;
+                height: 50px;
+                width: 50px;
+                display: inline-block;
+            }
+            #d3{
+                background-color: #FF0000;
+                height: 50px;
+                width: 50px;
+                display: block;
+            }
+            #d4{
+                background-color: hsl(240, 40%, 60%);
+                height: 50px;
+                width: 50px;
+                
+            }
+
+
+            #s1{
+                background-color: rgba(255, 0, 0, 0.5);
+                height: 50px;
+                width: 50px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1" class="c1">第一個段落<br>123</p>
+        <p id="p2" class="c2">第二個段落</p>
+        <p class="c1" style="background-color: black;">第三個段落</p>
+        <p style="color: blue;">第四個段落</p>
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+        <br><span id="s1">span1</span>
+
+    </body>
+
+
+
+
+
+</html>
