@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>1005-css容器設定</title>
+        <style>
+            /*容器 BOX
+                box-sizing:預設content-box 也可以改成border-box;
+                
+                由內而外:content內容(寬高)/padding填充/border框線/margin邊界
+                除了內容 分別可以設定:上(top) 右(right) 下(bottom) 左(left)
+                框線再分:粗細(width) 樣式(style) 顏色(color)
+                框線樣式:實線(solid) 虛線(dashed) 點點(dotted) 雙線(double)
+                透明顏色:transparent               
+                borer-redius(圓角矩形的半徑)    
+
+            */
+            #d1 {
+                width:100px;
+                height:100px;
+                background-color: lightgray;
+                border: 4px solid red;
+                /*border-color:black red green yellow;
+                border-width:4px 10px 20px 5px;上 右 下 左*/
+                /*border-style:solid/dashed/dotted/double;*/
+                padding:10px;
+                box-sizing: border-box;
+            }
+            #d2 {
+                width: 200px;
+                height: 80px;
+                border:3px solid black;
+                margin-top: 10px;
+                display: inline-block;
+                border-radius: 10%;/*相對單位*/
+            }
+            #d3 {
+                width: 200px;
+                height: 200px;
+                border: 3px solid black;
+                margin-left: 10px;
+                display: inline-block;
+                border-radius: 20px 10px 30px 50px;/*絕對單位*/
+            }
+            #d4 {
+                width: 0px;
+                height: 0px;
+                border: 50px solid black;
+                margin-top: 10px;
+                border-color: blue red green yellow;
+                border-width: 20px 0px 50px 80px;
+                
+            }
+            #diamond1 {
+                width: 50px;
+                height: 0px;
+                border: 50px solid transparent;
+                margin-top: 10px;
+                border-color: white white green white;
+                border-top-width:0;
+            }
+            #diamond2 {
+                width: 0px;
+                height: 0px;
+                border: 50px solid transparent;
+                margin-top:0px;
+                border-color: green white white white;
+                border-width: 75px;
+                border-bottom-width:0px;
+            }
+            #tree1 {
+                width: 0px;
+                height: 0px;
+                border: 40px solid transparent;
+
+
+            }
+            #tree2{
+            width :20px;
+            height:0px;
+            border:40px
+            
+            }
+
+        </style>
+</head>
+<body>
+        <div id="d1">123</div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div><hr>
+        <div id="diamond1"></div>
+        <div id="diamond2"></div><hr>
+        <div id="tree1"></div>
+        <div id="tree2"></div>
+        <div id="tree3"></div>
+        <div id="tree4"></div>
+
+
+</body>
+</html>
